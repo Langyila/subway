@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 165px;
+  background-color: #fff;
+  border-top: 5px solid #009223;
+  border-bottom: 1px solid #ddd;
+}
+
+#header1 {
+  width: 1170px;
+  height: 100px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* mt만 선언시에 부모까지 같이 딸려오니까 ov:h을 부모한테 선언 */
+#logo {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#header1_menu {
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+
+#header1_mwnu ul {}
+
+#header1_menu li {
+  float: left;
+  margin: 0 5px;
+  font-size: 14px;
+  margin-left: 15px;
+  line-height: 40px;
+}
+
+#header1_menu li:last-child {
+  margin-top: 5px;
+}
+
+#header2 {
+  width: 1170px;
+  height: 65px;
+  margin: auto;
+  text-align: center;
+}
+
+#header2_menu li {
+  display: inline-block;
+  margin: 50px;
+  margin-top: 20px;
+  font-weight: 900;
+}
+
+/*  */
+#slide {
+  width: 100%;
+  height: 490px;
+  position: relative;
+  overflow: hidden;
+}
+
+#slide_img {
+  width: 5760px;
+  height: 440px;
+  position: absolute;
+}
+
+#slide_img>li>img {
+  width: 100%;
+}
+
+#slide_img>li {
+  width: 1920px;
+  height: 440px;
+  float: left;
+}
+
+/* pos:a를 주고 부모한테 pos:r를 선언하고 l0,r0,t0,b0,m:a까지 선언을 해야 가운데로 정렬이 된다. */
+/* 부모한테 pos:a이 있으면 선언 no */
+#slide_bt {
+  width: 1170px;
+  height: 490px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#slide_bt_box {
+  width: 600px;
+  height: 120px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#slide_bt_button {
+  float: right;
+}
+
+#slide_bt_button li {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  float: left;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#slide_bt_button li:nth-child(1) {
+  width: 30px;
+  height: 10px;
+  background-color: #ffc300;
+}
+
+#slide_bt_leftbox {
+  width: 300px;
+  height: 80px;
+  background: url(icons/icon_utill_global.png) 90px center no-repeat;
+  float: left;
+  border-radius: 30px 0 0 0;
+  clear: both;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 80px;
+  font-weight: 900;
+  text-align: center;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+#slide_bt_rightbox {
+  width: 300px;
+  height: 80px;
+  background: url(icons/icon_utill_global.png) 60px center no-repeat;
+  float: right;
+  border-radius: 0 0 30px 0;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 80px;
+  font-weight: 900;
+  padding-left: 30px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+/*  */
+#subway_menu {
+  width: 1170px;
+  height: 450px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+#subway_menu_title {
+  width: 100%;
+  height: 60px;
+}
+
+#subway_menu_title h2 {
+  height: 60px;
+  line-height: 60px;
+  background: url(icons/title_bg.png) 0 center no-repeat;
+  padding-left: 30px;
+  float: left;
+}
+
+#subway_menu_title ul {
+  width: 400px;
+  height: 30px;
+  float: right;
+  margin-top: 15px;
+}
+
+#subway_menu_title ul li {
+  display: inline-block;
+  padding-right: 20px;
+  border-right: 1px solid #ccc;
+}
+
+#subway_menu_product {
+  width: 100%;
+  height: 300px;
+  clear: both;
+}
+
+#subway_menu_product li {
+  width: 23%;
+  margin: 1%;
+  height: 300px;
+  float: left;
+  text-align: center;
+}
+
+#subway_menu_product li img {
+  width: 100%;
+}
+
+/* 그냥 아이디 복붙해... */
+/* 단위... */
+#news_wrap {
+  width: 100%;
+  height: 790px;
+  background: url(icons/bg_content.gif)repeat;
+  margin-top: 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+#news_wrap>ul {
+  width: 1170px;
+  height: 630px;
+  margin: auto;
+  margin-top: 57px;
+  position: relative;
+}
+
+#news_wrap>ul>li h3 {
+  font-size: 30px;
+}
+
+#news_wrap>ul>li button {
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: transparent;
+  margin-top: 80px;
+}
+
+#news_wrap>ul>li:nth-child(1) {
+  width: 400px;
+  height: 300px;
+  background: url(images/bg_utilization.png);
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+#news_wrap>ul>li:nth-child(2) {
+  width: 825px;
+  height: 300px;
+  background: url(images/img_subway_history.png);
+  position: absolute;
+  right: -56px;
+  top: 0;
+  padding: 50px;
+  padding-left: 400px;
+  box-sizing: border-box;
+}
+
+#news_wrap>ul>li:nth-child(3) {
+  width: 870px;
+  height: 300px;
+  background: url(icons/title_bg.png) 55px 60px no-repeat;
+  margin-top: 30px;
+  border-radius: 30px 0 30px 0;
+  float: left;
+  box-sizing: border-box;
+}
+
+#news_box3_left {
+  float: left;
+  padding: 80px;
+}
+
+#news_box3_left p {
+  margin-top: 20px;
+  color: #333;
+}
+
+#news_box3_right {
+  float: right;
+  margin-top: 70px;
+  margin-right: 120px;
+}
+
+#news_box3_right p {
+  line-height: 45px;
+}
+
+#news_box3_right h5 {
+  margin-top: 20px;
+  color: #333;
+}
+
+#news_wrap>ul>li:nth-child(4) {
+  width: 270px;
+  height: 300px;
+  float: right;
+  background: url(images/banner_20220523033233036.png);
+  margin-top: 30px;
+  border-radius: 0 30px 0 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+#news_slide {
+  width: 810px;
+  height: 300px;
+  position: absolute;
+}
+
+#news_slide>li {
+  width: 270px;
+  height: 300px;
+  float: left;
+}
+
+#news_slide>li>img {
+  width: 100%;
+}
+
+#news_bt {
+  position: absolute;
+  text-align: right;
+  top: 20px;
+  width: 100%;
+}
+
+#news_bt>li {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: inline-block;
+}
+
+#news_bt>li:first-child {
+  width: 25px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #ffc300;
+}
+
+/* 자식에 m:a시에 말려올라가면 부모에 ov:h */
+/* 자식에 인라인블럭을 하면 부모에 텍스트얼라인 센터 */
+#icon {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#icon ul {
+  width: 1170px;
+  height: 130px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+#icon ul li {
+  width: 260px;
+  height: 70px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.icon_img {
+  width: 70px;
+  height: 70px;
+  float: left;
+}
+
+#icon>ul>li:nth-child(1) .icon_img {
+  background: url(icons/icon_quickmenu.png) 0 0 no-repeat;
+}
+
+#icon>ul>li:nth-child(2) .icon_img {
+  background: url(icons/icon_quickmenu.png) -70px 0 no-repeat;
+}
+
+#icon>ul>li:nth-child(3) .icon_img {
+  background: url(icons/icon_quickmenu.png) -140px 0 no-repeat;
+}
+
+#icon>ul>li:nth-child(4) .icon_img {
+  background: url(icons/icon_quickmenu.png) -210px 0 no-repeat;
+}
+
+.icon_textbox {
+  width: 180px;
+  height: 60px;
+  float: right;
+  margin: 5px;
+}
+
+/*  */
+footer {
+  background-color: #292929;
+}
+
+#footer1 {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+}
+
+#footer2 {
+  width: 100%;
+  height: 90px;
+}
+
+#footer1_box {
+  width: 1170px;
+  height: 60px;
+  margin: auto;
+}
+
+#footer2_box {
+  width: 1170px;
+  height: 90px;
+  margin: auto;
+}
